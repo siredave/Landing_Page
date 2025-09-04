@@ -2,8 +2,13 @@ import { motion } from "framer-motion";
 import ReactPlayer from "react-player";
 import { useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
 
 export default function App() {
+
+  const [open, setOpen] = useState(false);
+
   const agenda = [
     { time: "9:00 AM", event: "Welcome to Lagos Venture Finance Summit" },
     { time: "9:30 AM", event: "Keynote: The Role of Capital Allocators in Developing Africa's Venture Ecosystem" },
@@ -56,23 +61,44 @@ export default function App() {
   return (
     <div className="font-sans text-gray-900">
       {/* Navbar */}
-      <nav className="fixed top-0 w-full bg-white/70 backdrop-blur-lg shadow-md z-50">
-        <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-          {/* Logo */}
-          <a href="#top" className="flex items-center">
-            <img src="/TingoAi_Logo.png" alt="Company Logo" className="h-10 w-auto" />
-          </a>
+ <nav className="fixed top-0 w-full bg-white/70 backdrop-blur-lg shadow-md z-50">
+      <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+        {/* Logo */}
+        <a href="#top" className="flex items-center">
+          <img src="/TingoAi_Logo.png" alt="Company Logo" className="h-10 w-auto" />
+        </a>
 
-          {/* Menu */}
-          <ul className="flex gap-6 text-gray-800 font-medium">
-  <li><a href="#about" className="hover:text-orange-600">About</a></li>
-  <li><a href="#stream" className="hover:text-orange-600">Stream</a></li>
-  <li><a href="#agenda" className="hover:text-orange-600">Agenda</a></li>
-  <li><a href="#speakers" className="hover:text-orange-600">Speakers</a></li>
-  <li><a href="#contact" className="hover:text-orange-600">Contact</a></li>
-</ul>
+        {/* Desktop Menu */}
+        <ul className="hidden md:flex gap-6 text-gray-800 font-medium">
+          <li><a href="#about" className="hover:text-orange-600">About</a></li>
+          <li><a href="#stream" className="hover:text-orange-600">Stream</a></li>
+          <li><a href="#agenda" className="hover:text-orange-600">Agenda</a></li>
+          <li><a href="#speakers" className="hover:text-orange-600">Speakers</a></li>
+          <li><a href="#contact" className="hover:text-orange-600">Contact</a></li>
+        </ul>
+
+        {/* Mobile Menu Button */}
+        <button
+          onClick={() => setOpen(!open)}
+          className="md:hidden text-gray-800"
+        >
+          {open ? <X size={28} /> : <Menu size={28} />}
+        </button>
+      </div>
+
+      {/* Mobile Dropdown */}
+      {open && (
+        <div className="md:hidden bg-white/90 backdrop-blur-lg shadow-md">
+          <ul className="flex flex-col items-center gap-4 py-4 text-gray-800 font-medium">
+            <li><a href="#about" onClick={() => setOpen(false)}>About</a></li>
+            <li><a href="#stream" onClick={() => setOpen(false)}>Stream</a></li>
+            <li><a href="#agenda" onClick={() => setOpen(false)}>Agenda</a></li>
+            <li><a href="#speakers" onClick={() => setOpen(false)}>Speakers</a></li>
+            <li><a href="#contact" onClick={() => setOpen(false)}>Contact</a></li>
+          </ul>
         </div>
-      </nav>
+      )}
+    </nav>
 
       {/* Hero */}
       <section className="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-r from-orange-500 via-orange-600 to-red-500 text-white px-4">
@@ -101,7 +127,7 @@ export default function App() {
           <h2 className="text-3xl font-bold mb-6 text-orange-400">Live Stream</h2>
          <div className="aspect-video rounded-xl overflow-hidden shadow-lg">
       <ReactPlayer
-        url="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4"
+        url="https://www.commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
         width="100%"
         height="100%"
         controls
