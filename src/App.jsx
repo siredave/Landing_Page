@@ -65,7 +65,7 @@ export default function App() {
       <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
         {/* Logo */}
         <a href="#top" className="flex items-center">
-          <img src="/TingoAi_Logo.png" alt="Company Logo" className="h-10 w-auto" />
+          <img src="/Tingo.png" alt="Company Logo" className="h-10 w-auto" />
         </a>
 
         {/* Desktop Menu */}
@@ -122,19 +122,21 @@ export default function App() {
       </section>
 
       {/* Stream */}
-      <section id="stream" className="bg-orange-50 py-16 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6 text-orange-400">Live Stream</h2>
-         <div className="aspect-video rounded-xl overflow-hidden shadow-lg">
-      <ReactPlayer
-        url="https://www.commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
-        width="100%"
-        height="100%"
+  <section id="stream" className="bg-orange-50 py-20 px-4">
+  <div className="max-w-5xl mx-auto text-center">
+    <h2 className="text-4xl sm:text-5xl font-extrabold mb-10 text-orange-500">
+      Live Stream
+    </h2>
+    <div className="relative aspect-video w-full sm:w-3/4 md:w-2/3 mx-auto rounded-2xl overflow-hidden shadow-2xl border border-orange-200 hover:shadow-orange-400 transition-shadow duration-300">
+      <video
+        src="https://www.w3schools.com/html/mov_bbb.mp4"
         controls
+        className="w-full h-full object-cover"
       />
     </div>
-        </div>
-      </section>
+  </div>
+</section>
+
 
       {/* Agenda */}
       <section id="agenda" className="max-w-6xl mx-auto px-4 py-16">

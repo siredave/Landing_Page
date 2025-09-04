@@ -61,13 +61,13 @@
 //         {/* Right (Video Player) */}
 //         <div className="md:w-1/2 mt-10 md:mt-0 flex justify-center">
 //           {videoUrl ? (
-//             <video
+//           `  <video
 //               src={videoUrl}
 //               controls
 //               autoPlay
 //               loop
 //               className="w-full max-w-lg rounded-2xl shadow-lg border border-gray-700"
-//             />
+//             />`
 //           ) : (
 //             <p>Loading video...</p>
 //           )}
