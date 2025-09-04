@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+.time-font {
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.event-font {
+  font-family: 'Lora', serif;
+}

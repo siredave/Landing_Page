@@ -1,3 +1,181 @@
+// import { motion } from "framer-motion";
+// import ReactPlayer from "react-player";
+
+// export default function App() {
+//   const agenda = [
+//     { time: "9:00 AM", event: "Welcome to Lagos Venture Finance Summit" },
+//     { time: "9:30 AM", event: "Keynote: The Role of Capital Allocators in Developing Africa's Venture Ecosystem" },
+//     { time: "10:00 AM", event: "Fireside Chat: Unlocking Local Capital for Emerging Fund Managers in Africa" },
+//     { time: "10:30 AM", event: "Keynote: The Art of Capital Allocation in Africa" },
+//     { time: "11:00 AM", event: "Industry Outlook: The State of Africa's Private Market" },
+//     { time: "11:30 AM", event: "GP Perspective: How to Launch a Venture Capital Fund in Africa" },
+//     { time: "12:30 PM", event: "Networking Break (GP/LP Matching & Delegate Networking)" },
+//     { time: "1:00 PM", event: "Breakouts: Navigating Fundraising / Building Innovation Hubs in Nigeria" },
+//     { time: "2:00 PM", event: "Keynote: Backing Rising Female GPs in Africa" },
+//     { time: "2:30 PM", event: "CVC in Africa: How to Innovate through Corporate Venturing" },
+//     { time: "3:20 PM", event: "Vencapital Alumni Perspective: Breaking into VC and Startup in Africa" },
+//     { time: "3:40 PM", event: "VenCap Events Promo + Closing Remarks by Esohe" },
+//   ];
+
+//   const speakers = [
+//     "Henry Ogbuagu – Founding Partner, Vencapital",
+//     "Oguche Agudah – CEO, PenOp",
+//     "Gbolade Okeowo – VP, Kuramo Capital Management",
+//     "Dr. Akintoye Akindele – Chairman, Platform Capital",
+//     "Preston Timeyin Ideh – CEO, Stears",
+//     "Dr. Dotun Olowoporoku – Managing Partner, Ventures Platform",
+//     "Adesuwa Okunbo Rhodes – Founder & CEO, Aruwa Capital Management",
+//     "Iyinoluwa Aboyeji – Founding Partner, Future Africa",
+//     "Ashim Egunjobi – Managing Partner, Octerra Capital",
+//     "Esohe Igbinoba – Venture Partner, Vencapital",
+//     "Idowu Akinde – Managing Director, Impact Hub Lagos",
+//     "Jennifer Jonathan – Acting Executive Director, ISN Hubs",
+//     "Mope Abudu – Managing Partner, AfriGloCal Venture Capital",
+//     "Ina Alogwu – CDIO, T2 Mobile",
+//     "Oyin Solebo – Operating Partner, Cone Venture Studio",
+//     "Anil Atmaramani – Partner, Antler",
+//     "Nada Shahen – Managing Director, GB Ventures",
+//     "Elton Oshodipe – Investment Projects, Two Lions (Vencap Alum)",
+//     "Henry C. Okonkwo – Business Consultant (Vencap Alum)",
+//     "Ogechi Yvonne Obike – Business Operations, Brass (Vencap Alum)",
+//   ];
+
+//   return (
+//     <div className="font-sans text-gray-900">
+//       {/* Navbar */}
+// <nav className="fixed top-0 w-full bg-white/30 backdrop-blur-md shadow-md z-50">
+//   <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+//     <a href="#top" className="text-xl font-bold text-blue-600">
+//       Lagos Venture Finance Summit
+//     </a>
+//     <ul className="hidden md:flex gap-6 font-medium text-gray-800">
+//       <li><a href="#about" className="hover:text-blue-600">About</a></li>
+//       <li><a href="#stream" className="hover:text-blue-600">Stream</a></li>
+//       <li><a href="#agenda" className="hover:text-blue-600">Agenda</a></li>
+//       <li><a href="#speakers" className="hover:text-blue-600">Speakers</a></li>
+//       <li><a href="#contact" className="hover:text-blue-600">Contact</a></li>
+//     </ul>
+//   </div>
+// </nav>
+
+
+
+//       {/* Hero */}
+// <section className="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 text-white px-4">
+//   <motion.h1
+//     initial={{ opacity: 0, y: -30 }}
+//     animate={{ opacity: 1, y: 0 }}
+//     transition={{ duration: 1 }}
+//     className="text-4xl md:text-6xl font-extrabold leading-tight"
+//   >
+//     Lagos Venture Finance Summit — Sept 5, 2025
+//   </motion.h1>
+//   <motion.p
+//     initial={{ opacity: 0, y: 30 }}
+//     animate={{ opacity: 1, y: 0 }}
+//     transition={{ duration: 1, delay: 0.3 }}
+//     className="mt-4 max-w-2xl text-lg md:text-xl"
+//   >
+//     Catalyzing Africa’s next venture wave—GPs, LPs, and fund leaders converge in Lagos.
+//   </motion.p>
+//   <motion.a
+//     href="#stream"
+//     whileHover={{ scale: 1.05 }}
+//     className="mt-6 px-6 py-3 bg-white text-orange-600 font-semibold rounded-lg shadow hover:bg-gray-100"
+//   >
+//     Watch Live
+//   </motion.a>
+// </section>
+
+
+//       {/* About */}
+//       <section id="about" className="max-w-5xl mx-auto px-4 py-16 text-center">
+//         <h2 className="text-3xl md:text-4xl font-bold mb-6">About the Summit</h2>
+//         <p className="text-lg text-gray-700 leading-relaxed">
+//           The Lagos Venture Finance Summit brings together emerging fund managers and capital allocators to drive venture capital growth across Africa. Explore liquidity trends, fund strategies, and network with industry leaders.
+//         </p>
+//       </section>
+
+//       {/* Stream */}
+//       <section id="stream" className="bg-gray-100 py-16 px-4">
+//         <div className="max-w-4xl mx-auto text-center">
+//           <h2 className="text-3xl font-bold mb-6">Live Stream</h2>
+//           <div className="aspect-video rounded-xl overflow-hidden shadow-lg">
+//             <ReactPlayer
+//               url="https://www.youtube.com/watch?v=GE_SfNVNyqk" // Replace with actual stream link
+//               width="100%"
+//               height="100%"
+//               controls
+//             />
+//           </div>
+//         </div>
+//       </section>
+
+//       {/* Agenda */}
+// <section id="agenda" className="max-w-6xl mx-auto px-4 py-16">
+// <h2 className="text-3xl font-bold mb-8 text-center">Agenda</h2>
+//   <ul className="space-y-6">
+//     {agenda.map((item, index) => (
+//       <li
+//         key={index}
+//         className="flex flex-col md:flex-row md:items-center justify-between bg-white/70 backdrop-blur-md p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300"
+//       >
+//         <span className="text-lg md:text-xl font-bold text-blue-700">
+//           {item.time}
+//         </span>
+//         <span className="mt-2 md:mt-0 text-gray-800 text-base md:text-lg font-medium leading-relaxed">
+//           {item.event}
+//         </span>
+//       </li>
+//     ))}
+//   </ul>
+// </section>
+
+
+//       {/* Speakers */}
+// <section id="speakers" className="max-w-6xl mx-auto px-4 py-16">
+//  <h2 className="text-3xl font-bold mb-8 text-center">Speakers</h2>
+//   <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+//     {speakers.map((s, idx) => (
+//       <div
+//         key={idx}
+//         className="flex items-center justify-center w-44 h-44 mx-auto text-center 
+//                    bg-sky-100/30 backdrop-blur-md rounded-full shadow-md 
+//                    border border-sky-200/40 
+//                    hover:shadow-xl transition duration-300 p-5"
+//       >
+//         <p className="text-sm md:text-base font-semibold text-gray-800 leading-snug">
+//           {s}
+//         </p>
+//       </div>
+//     ))}
+//   </div>
+// </section>
+
+
+//       {/* Contact */}
+//       <section id="contact" className="bg-blue-600 text-white py-16 px-4 text-center">
+//         <h2 className="text-3xl font-bold mb-4">Get in Touch</h2>
+//         <p className="max-w-2xl mx-auto mb-6">
+//           For sponsorships, partnerships, or inquiries, please reach out to us.
+//         </p>
+//         <a
+//           href="mailto:info@vencapital.org"
+//           className="px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg shadow hover:bg-gray-200"
+//         >
+//           Contact Us
+//         </a>
+//       </section>
+
+//       {/* Footer */}
+//       <footer className="bg-gray-900 text-gray-400 text-center py-6 text-sm">
+//         © 2025 Vencapital • Lagos Venture Finance Summit. All rights reserved.
+//       </footer>
+//     </div>
+//   );
+// }
+
+
 import { motion } from "framer-motion";
 import ReactPlayer from "react-player";
 
@@ -43,25 +221,23 @@ export default function App() {
   return (
     <div className="font-sans text-gray-900">
       {/* Navbar */}
-<nav className="fixed top-0 w-full bg-white/30 backdrop-blur-md shadow-md z-50">
-  <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-    <a href="#top" className="text-xl font-bold text-blue-600">
-      Lagos Venture Finance Summit
-    </a>
-    <ul className="hidden md:flex gap-6 font-medium text-gray-800">
-      <li><a href="#about" className="hover:text-blue-600">About</a></li>
-      <li><a href="#stream" className="hover:text-blue-600">Stream</a></li>
-      <li><a href="#agenda" className="hover:text-blue-600">Agenda</a></li>
-      <li><a href="#speakers" className="hover:text-blue-600">Speakers</a></li>
-      <li><a href="#contact" className="hover:text-blue-600">Contact</a></li>
-    </ul>
-  </div>
-</nav>
-
-
+      <nav className="fixed top-0 w-full bg-white/40 backdrop-blur-md shadow-md z-50">
+        <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+          <a href="#top" className="text-xl font-bold text-gray-800">
+            Lagos Venture Finance Summit
+          </a>
+          <ul className="hidden md:flex gap-6 font-small text-gray-800">
+            <li><a href="#about" className="hover:text-orange-600">About</a></li>
+            <li><a href="#stream" className="hover:text-orange-600">Stream</a></li>
+            <li><a href="#agenda" className="hover:text-orange-600">Agenda</a></li>
+            <li><a href="#speakers" className="hover:text-orange-600">Speakers</a></li>
+            <li><a href="#contact" className="hover:text-orange-600">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
 
       {/* Hero */}
-      <section className="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-r from-blue-600 to-indigo-700 text-white px-4">
+      <section className="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-r from-orange-500 via-orange-600 to-red-500 text-white px-4">
         <motion.h1
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -81,7 +257,7 @@ export default function App() {
         <motion.a
           href="#stream"
           whileHover={{ scale: 1.05 }}
-          className="mt-6 px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg shadow hover:bg-gray-100"
+          className="mt-6 px-6 py-3 bg-white text-orange-600 font-semibold rounded-lg shadow hover:bg-gray-100"
         >
           Watch Live
         </motion.a>
@@ -89,19 +265,19 @@ export default function App() {
 
       {/* About */}
       <section id="about" className="max-w-5xl mx-auto px-4 py-16 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-6">About the Summit</h2>
-        <p className="text-lg text-gray-700 leading-relaxed">
+        <h2 className="text-3xl md:text-4xl font-bold mb-6 text-orange-400">About the Summit</h2>
+        <p className="text-lg text-gray-700 font-semibold leading-relaxed">
           The Lagos Venture Finance Summit brings together emerging fund managers and capital allocators to drive venture capital growth across Africa. Explore liquidity trends, fund strategies, and network with industry leaders.
         </p>
       </section>
 
       {/* Stream */}
-      <section id="stream" className="bg-gray-100 py-16 px-4">
+      <section id="stream" className="bg-orange-50 py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6">Live Stream</h2>
+          <h2 className="text-3xl font-bold mb-6 text-orange-400">Live Stream</h2>
           <div className="aspect-video rounded-xl overflow-hidden shadow-lg">
             <ReactPlayer
-              url="https://www.youtube.com/watch?v=XXXXXXXXXXX" // Replace with actual stream link
+              url="https://www.youtube.com/watch?v=GE_SfNVNyqk"
               width="100%"
               height="100%"
               controls
@@ -111,56 +287,56 @@ export default function App() {
       </section>
 
       {/* Agenda */}
-<section id="agenda" className="max-w-6xl mx-auto px-4 py-16">
-<h2 className="text-3xl font-bold mb-8 text-center">Agenda</h2>
-  <ul className="space-y-6">
-    {agenda.map((item, index) => (
-      <li
-        key={index}
-        className="flex flex-col md:flex-row md:items-center justify-between bg-white/70 backdrop-blur-md p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300"
-      >
-        <span className="text-lg md:text-xl font-bold text-blue-700">
-          {item.time}
-        </span>
-        <span className="mt-2 md:mt-0 text-gray-800 text-base md:text-lg font-medium leading-relaxed">
-          {item.event}
-        </span>
-      </li>
-    ))}
-  </ul>
-</section>
+      <section id="agenda" className="max-w-6xl mx-auto px-4 py-16">
+        <h2 className="text-3xl font-bold mb-8 text-center text-orange-400">Agenda</h2>
+        <ul className="space-y-6">
+          {agenda.map((item, index) => (
+            <li
+              key={index}
+              className="flex flex-col md:flex-row md:items-center justify-between bg-white/70 backdrop-blur-md p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300"
+            >
+            <span className="time-font text-lg md:text-xl font-normal text-orange-400">
+  {item.time}
+</span>
 
+              <span className="event-font mt-2 md:mt-0 text-gray-800 text-base md:text-lg font-semibold leading-relaxed">
+  {item.event}
+</span>
+
+            </li>
+          ))}
+        </ul>
+      </section>
 
       {/* Speakers */}
-<section id="speakers" className="max-w-6xl mx-auto px-4 py-16">
- <h2 className="text-3xl font-bold mb-8 text-center">Speakers</h2>
-  <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-    {speakers.map((s, idx) => (
-      <div
-        key={idx}
-        className="flex items-center justify-center w-44 h-44 mx-auto text-center 
-                   bg-sky-100/30 backdrop-blur-md rounded-full shadow-md 
-                   border border-sky-200/40 
-                   hover:shadow-xl transition duration-300 p-5"
-      >
-        <p className="text-sm md:text-base font-semibold text-gray-800 leading-snug">
-          {s}
-        </p>
-      </div>
-    ))}
-  </div>
-</section>
-
+      <section id="speakers" className="max-w-6xl mx-auto px-4 py-16">
+        <h2 className="text-3xl font-bold mb-8 text-center text-orange-400">Speakers</h2>
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          {speakers.map((s, idx) => (
+            <div
+              key={idx}
+              className="flex items-center justify-center w-44 h-44 mx-auto text-center 
+                         bg-orange-100/30 backdrop-blur-md rounded-full shadow-md 
+                         border border-orange-200/40 
+                         hover:shadow-xl transition duration-300 p-5"
+            >
+              <p className="text-sm md:text-base font-semibold text-gray-800 leading-snug">
+                {s}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
 
       {/* Contact */}
-      <section id="contact" className="bg-blue-600 text-white py-16 px-4 text-center">
+      <section id="contact" className="bg-gradient-to-r from-orange-600 to-red-500 text-white py-16 px-4 text-center">
         <h2 className="text-3xl font-bold mb-4">Get in Touch</h2>
         <p className="max-w-2xl mx-auto mb-6">
           For sponsorships, partnerships, or inquiries, please reach out to us.
         </p>
         <a
           href="mailto:info@vencapital.org"
-          className="px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg shadow hover:bg-gray-200"
+          className="px-6 py-3 bg-white text-orange-600 font-semibold rounded-lg shadow hover:bg-gray-200"
         >
           Contact Us
         </a>
@@ -168,7 +344,7 @@ export default function App() {
 
       {/* Footer */}
       <footer className="bg-gray-900 text-gray-400 text-center py-6 text-sm">
-        © 2025 Vencapital • Lagos Venture Finance Summit. All rights reserved.
+        © 2025 TingoMedia. All rights reserved.
       </footer>
     </div>
   );
