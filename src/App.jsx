@@ -193,6 +193,7 @@ export default function App() {
               <p className="text-sm md:text-base font-semibold text-gray-800 leading-snug">{s}</p>
             </div>
           ))}
+
         </div>
       </section>
 
@@ -202,7 +203,7 @@ export default function App() {
         <p className="max-w-2xl mx-auto mb-6">
           For sponsorships, partnerships, or inquiries, please reach out to us.
         </p>
-        <p className="px-6 py-3 bg-white text-orange-600 font-semibold rounded-lg shadow hover:bg-gray-200">
+        <p className="max-w-2xl mx-auto mb-6">
           Tingo AI, 1 Itirin Court, Off Bishop Aboyede Cole, Victoria Island, Lagos, Nigeria.
         </p>
       </section>
