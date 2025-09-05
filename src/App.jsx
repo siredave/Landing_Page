@@ -1,3 +1,4 @@
+import React from "react";
 import { motion } from "framer-motion";
 import ReactPlayer from "react-player";
 import { useRef } from "react";
@@ -138,6 +139,27 @@ export default function App() {
 </section>
 
 
+{/* <section id="stream" className="bg-orange-50 py-20 px-4">
+  <div className="max-w-5xl mx-auto text-center">
+    <h2 className="text-4xl sm:text-5xl font-extrabold mb-10 text-orange-500">
+      Live Stream
+    </h2>
+    <div className="relative aspect-video w-full sm:w-3/4 md:w-2/3 mx-auto rounded-2xl overflow-hidden shadow-2xl border border-orange-200 hover:shadow-orange-400 transition-shadow duration-300">
+      <iframe
+      src="https://www.youtube.com/embed/5qap5aO4i9A?autoplay=0&modestbranding=1&rel=0"
+  title="YouTube Live Stream"
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  className="w-full h-full"
+/>
+    </div>
+  </div>
+</section> */}
+
+
+
+
+   
       {/* Agenda */}
       <section id="agenda" className="max-w-6xl mx-auto px-4 py-16">
         <h2 className="text-3xl font-bold mb-8 text-center text-orange-400">Agenda</h2>
@@ -187,7 +209,7 @@ export default function App() {
 
       {/* Footer */}
       <footer className="bg-gray-900 text-gray-400 text-center py-6 text-sm">
-        © 2025 TingoMedia. All rights reserved.
+        © 2025 TingoMedia & Technology. All rights reserved.
       </footer>
     </div>
   );
