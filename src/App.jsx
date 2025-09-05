@@ -123,7 +123,7 @@ export default function App() {
       </section>
 
       {/* Stream */}
-  <section id="stream" className="bg-orange-50 py-20 px-4">
+  {/* <section id="stream" className="bg-orange-50 py-20 px-4">
   <div className="max-w-5xl mx-auto text-center">
     <h2 className="text-4xl sm:text-5xl font-extrabold mb-10 text-orange-500">
       Live Stream
@@ -136,17 +136,17 @@ export default function App() {
       />
     </div>
   </div>
-</section>
+</section> */}
 
 
-{/* <section id="stream" className="bg-orange-50 py-20 px-4">
+<section id="stream" className="bg-orange-50 py-20 px-4">
   <div className="max-w-5xl mx-auto text-center">
     <h2 className="text-4xl sm:text-5xl font-extrabold mb-10 text-orange-500">
       Live Stream
     </h2>
     <div className="relative aspect-video w-full sm:w-3/4 md:w-2/3 mx-auto rounded-2xl overflow-hidden shadow-2xl border border-orange-200 hover:shadow-orange-400 transition-shadow duration-300">
       <iframe
-      src="https://www.youtube.com/embed/5qap5aO4i9A?autoplay=0&modestbranding=1&rel=0"
+      src="https://www.youtube.com/embed/m1gImNgcC14?autoplay=0&modestbranding=1&rel=0"
   title="YouTube Live Stream"
   frameBorder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -154,7 +154,7 @@ export default function App() {
 />
     </div>
   </div>
-</section> */}
+</section>
 
 
 
@@ -202,14 +202,14 @@ export default function App() {
         <p className="max-w-2xl mx-auto mb-6">
           For sponsorships, partnerships, or inquiries, please reach out to us.
         </p>
-        <a href="https://www.tingomedia.ai" className="px-6 py-3 bg-white text-orange-600 font-semibold rounded-lg shadow hover:bg-gray-200">
-          Contact Us
-        </a>
+        <p className="px-6 py-3 bg-white text-orange-600 font-semibold rounded-lg shadow hover:bg-gray-200">
+          Tingo AI, 1 Itirin Court, Off Bishop Aboyede Cole, Victoria Island, Lagos, Nigeria.
+        </p>
       </section>
 
       {/* Footer */}
       <footer className="bg-gray-900 text-gray-400 text-center py-6 text-sm">
-        © 2025 TingoMedia & Technology. All rights reserved.
+        © 2025 TingoMedia & Technology Ltd. All rights reserved.
       </footer>
     </div>
   );
